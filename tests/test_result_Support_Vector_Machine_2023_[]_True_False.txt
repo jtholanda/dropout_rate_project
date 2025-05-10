@@ -1,0 +1,24 @@
+Matriz de Confusão:
+[[160  15]
+ [ 33  69]]
+
+Modelo testado: Support_Vector_Machine
+Data filter aplicado: True
+Concatenação de inputs: False
+Ano de referência e anos removidos: (2023, [])
+Dimensões - features_train: (2312, 8)
+Dimensões - target_train: (2312,)
+Dimensões - features_test: (277, 8)
+Dimensões - target_test: (277,)
+
+Parâmetros do melhor modelo:
+{'C': 0.1, 'break_ties': False, 'cache_size': 200, 'class_weight': 'balanced', 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': -1, 'probability': True, 'random_state': 0, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+
+Melhor threshold: 0.46
+Melhor threshold TPR: 0.5
+
+AUC: 0.7954
+F1: 0.7419
+Recall: 0.6765
+Precision: 0.8214
+Accuracy: 0.8267

@@ -1,0 +1,24 @@
+Matriz de Confusão:
+[[172   3]
+ [ 82  20]]
+
+Modelo testado: Logistic_Regression
+Data filter aplicado: True
+Concatenação de inputs: False
+Ano de referência e anos removidos: (2023, [])
+Dimensões - features_train: (2312, 8)
+Dimensões - target_train: (2312,)
+Dimensões - features_test: (277, 8)
+Dimensões - target_test: (277,)
+
+Parâmetros do melhor modelo:
+{'C': 0.05, 'class_weight': 'balanced', 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': None, 'max_iter': 100, 'multi_class': 'deprecated', 'n_jobs': None, 'penalty': 'l1', 'random_state': 0, 'solver': 'saga', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+
+Melhor threshold: 0.57
+Melhor threshold TPR: 0.5
+
+AUC: 0.5895
+F1: 0.3200
+Recall: 0.1961
+Precision: 0.8696
+Accuracy: 0.6931

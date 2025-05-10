@@ -1,0 +1,24 @@
+Matriz de Confusão:
+[[582 193]
+ [217 357]]
+
+Modelo testado: Logistic_Regression
+Data filter aplicado: False
+Concatenação de inputs: False
+Ano de referência e anos removidos: (2021, [2020])
+Dimensões - features_train: (1550, 8)
+Dimensões - target_train: (1550,)
+Dimensões - features_test: (1349, 8)
+Dimensões - target_test: (1349,)
+
+Parâmetros do melhor modelo:
+{'C': 0.01, 'class_weight': 'balanced', 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.5, 'max_iter': 100, 'multi_class': 'deprecated', 'n_jobs': None, 'penalty': 'elasticnet', 'random_state': 0, 'solver': 'saga', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+
+Melhor threshold: 0.5
+Melhor threshold TPR: 0.5
+
+AUC: 0.6865
+F1: 0.6352
+Recall: 0.6220
+Precision: 0.6491
+Accuracy: 0.6961

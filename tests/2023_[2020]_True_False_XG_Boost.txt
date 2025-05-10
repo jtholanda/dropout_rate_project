@@ -1,0 +1,42 @@
+2023, [2020], True, False, XG_Boost
+categorical_features: ['RF-CAT', 'SEXO', 'TC', 'NC', 'TO', 'ME', 'TURNO']
+numerical_features: ['IDA-MÉD']
+
+label_pipeline: xgboost
+base_model: XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric='logloss',
+              feature_types=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=None, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=None,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=None,
+              n_jobs=None, num_parallel_tree=None, random_state=0, ...)
+chosen_model: XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric='logloss',
+              feature_types=None, gamma=0.2, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=0.01, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=3,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, random_state=0, ...)
+chosen_model.get_params():
+{'objective': 'binary:logistic', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': 'logloss', 'feature_types': None, 'gamma': 0.2, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.01, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 3, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 100, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 0, 'reg_alpha': 0, 'reg_lambda': 1.5, 'sampling_method': None, 'scale_pos_weight': 2.132183908045977, 'subsample': None, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+
+Grid Params: [{'xgboost__n_estimators': [100, 250], 'xgboost__max_depth': [3, 5, 7], 'xgboost__learning_rate': [0.01, 0.1, 0.2], 'xgboost__gamma': [0, 0.1, 0.2], 'xgboost__reg_alpha': [0, 0.1, 1], 'xgboost__reg_lambda': [1, 1.5, 2]}]
+best hyperparams grid: {'xgboost__gamma': 0.2, 'xgboost__learning_rate': 0.01, 'xgboost__max_depth': 3, 'xgboost__n_estimators': 100, 'xgboost__reg_alpha': 0, 'xgboost__reg_lambda': 1.5}
+best score grid params: 0.6528107823313303
+optimal threshold accuracy: 0.62670445
+
+Scores de roc_curve: [np.float64(0.64), np.float64(0.66), np.float64(0.7), np.float64(0.74), np.float64(0.71), np.float64(0.61), np.float64(0.68), np.float64(0.67), np.float64(0.65), np.float64(0.7)]
+Média de roc_curve: 0.68
+Desvio padrão de roc_curve: 0.04
+
+Scores de recall: [np.float64(0.81), np.float64(0.86), np.float64(0.88), np.float64(0.9), np.float64(0.88), np.float64(0.78), np.float64(0.86), np.float64(0.86), np.float64(0.79), np.float64(0.92)]
+Média de recall: 0.86
+Desvio padrão de recall: 0.04

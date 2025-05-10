@@ -1,0 +1,24 @@
+Matriz de Confusão:
+[[503  33]
+ [332  39]]
+
+Modelo testado: KNN
+Data filter aplicado: False
+Concatenação de inputs: False
+Ano de referência e anos removidos: (2022, [])
+Dimensões - features_train: (3985, 8)
+Dimensões - target_train: (3985,)
+Dimensões - features_test: (907, 8)
+Dimensões - target_test: (907,)
+
+Parâmetros do melhor modelo:
+{'algorithm': 'auto', 'leaf_size': 30, 'metric': 'euclidean', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 9, 'p': 1, 'weights': 'uniform'}
+
+Melhor threshold: 0.5
+Melhor threshold TPR: 0.5
+
+AUC: 0.5218
+F1: 0.1761
+Recall: 0.1051
+Precision: 0.5417
+Accuracy: 0.5976

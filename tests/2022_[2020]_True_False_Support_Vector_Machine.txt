@@ -1,0 +1,23 @@
+2022, [2020], True, False, Support_Vector_Machine
+categorical_features: ['RF-CAT', 'SEXO', 'TC', 'NC', 'TO', 'ME', 'TURNO']
+numerical_features: ['IDA-MÉD']
+
+label_pipeline: svm
+base_model: SVC(class_weight='balanced', probability=True, random_state=0)
+chosen_model: SVC(C=1, class_weight='balanced', degree=2, kernel='linear', probability=True,
+    random_state=0)
+chosen_model.get_params():
+{'C': 1, 'break_ties': False, 'cache_size': 200, 'class_weight': 'balanced', 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 2, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': True, 'random_state': 0, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+
+Grid Params: [{'svm__C': [0.1, 0.5, 1], 'svm__kernel': ['linear', 'rbf', 'poly', 'sigmoid'], 'svm__gamma': ['scale', 'auto'], 'svm__degree': [2, 3, 4]}]
+best hyperparams grid: {'svm__C': 1, 'svm__degree': 2, 'svm__gamma': 'scale', 'svm__kernel': 'linear'}
+best score grid params: 0.7404470284237725
+optimal threshold accuracy: 0.7047644045792222
+
+Scores de roc_curve: [np.float64(0.7), np.float64(0.76), np.float64(0.76), np.float64(0.72), np.float64(0.74), np.float64(0.75), np.float64(0.7), np.float64(0.69), np.float64(0.7), np.float64(0.72)]
+Média de roc_curve: 0.72
+Desvio padrão de roc_curve: 0.03
+
+Scores de recall: [np.float64(0.68), np.float64(0.64), np.float64(0.68), np.float64(0.68), np.float64(0.77), np.float64(0.73), np.float64(0.68), np.float64(0.57), np.float64(0.65), np.float64(0.63)]
+Média de recall: 0.67
+Desvio padrão de recall: 0.05

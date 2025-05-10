@@ -1,0 +1,22 @@
+2023, [], False, False, KNN
+categorical_features: ['RF-CAT', 'SEXO', 'TC', 'NC', 'TO', 'ME', 'TURNO']
+numerical_features: ['IDA-MÉD']
+
+label_pipeline: knn
+base_model: KNeighborsClassifier()
+chosen_model: KNeighborsClassifier(metric='euclidean', n_neighbors=9, p=1)
+chosen_model.get_params():
+{'algorithm': 'auto', 'leaf_size': 30, 'metric': 'euclidean', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 9, 'p': 1, 'weights': 'uniform'}
+
+Grid Params: [{'knn__n_neighbors': [3, 5, 7, 9], 'knn__weights': ['uniform', 'distance'], 'knn__metric': ['euclidean', 'manhattan', 'minkowski'], 'knn__p': [1, 2]}]
+best hyperparams grid: {'knn__metric': 'euclidean', 'knn__n_neighbors': 9, 'knn__p': 1, 'knn__weights': 'uniform'}
+best score grid params: 0.5322156943759706
+optimal threshold accuracy: inf
+
+Scores de roc_curve: [np.float64(0.66), np.float64(0.64), np.float64(0.64), np.float64(0.64), np.float64(0.66), np.float64(0.62), np.float64(0.61), np.float64(0.67), np.float64(0.67), np.float64(0.6)]
+Média de roc_curve: 0.64
+Desvio padrão de roc_curve: 0.02
+
+Scores de recall: [np.float64(0.28), np.float64(0.32), np.float64(0.26), np.float64(0.28), np.float64(0.28), np.float64(0.29), np.float64(0.26), np.float64(0.28), np.float64(0.31), np.float64(0.25)]
+Média de recall: 0.28
+Desvio padrão de recall: 0.02

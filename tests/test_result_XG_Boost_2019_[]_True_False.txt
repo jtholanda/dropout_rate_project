@@ -1,0 +1,24 @@
+Matriz de Confusão:
+[[191  38]
+ [ 81  10]]
+
+Modelo testado: XG_Boost
+Data filter aplicado: True
+Concatenação de inputs: False
+Ano de referência e anos removidos: (2019, [])
+Dimensões - features_train: (582, 8)
+Dimensões - target_train: (582,)
+Dimensões - features_test: (320, 8)
+Dimensões - target_test: (320,)
+
+Parâmetros do melhor modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': 'logloss', 'feature_types': None, 'gamma': 0.1, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.01, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 3, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 250, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 0, 'reg_alpha': 0, 'reg_lambda': 1, 'sampling_method': None, 'scale_pos_weight': 1.6861111111111111, 'subsample': None, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+
+Melhor threshold: 0.65
+Melhor threshold TPR: 0.5
+
+AUC: 0.4720
+F1: 0.1439
+Recall: 0.1099
+Precision: 0.2083
+Accuracy: 0.6281

@@ -1,0 +1,24 @@
+Matriz de Confusão:
+[[157  18]
+ [ 43  59]]
+
+Modelo testado: Decision_Tree
+Data filter aplicado: True
+Concatenação de inputs: False
+Ano de referência e anos removidos: (2023, [])
+Dimensões - features_train: (2312, 8)
+Dimensões - target_train: (2312,)
+Dimensões - features_test: (277, 8)
+Dimensões - target_test: (277,)
+
+Parâmetros do melhor modelo:
+{'ccp_alpha': 0.0, 'class_weight': 'balanced', 'criterion': 'entropy', 'max_depth': 5, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 4, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 0, 'splitter': 'best'}
+
+Melhor threshold: 0.72
+Melhor threshold TPR: 0.5
+
+AUC: 0.7378
+F1: 0.6592
+Recall: 0.5784
+Precision: 0.7662
+Accuracy: 0.7798

@@ -1,0 +1,24 @@
+Matriz de Confusão:
+[[284  25]
+ [243  51]]
+
+Modelo testado: Random_Forest
+Data filter aplicado: True
+Concatenação de inputs: False
+Ano de referência e anos removidos: (2022, [])
+Dimensões - features_train: (1709, 8)
+Dimensões - target_train: (1709,)
+Dimensões - features_test: (603, 8)
+Dimensões - target_test: (603,)
+
+Parâmetros do melhor modelo:
+{'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': 'balanced', 'criterion': 'gini', 'max_depth': 3, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 0, 'verbose': 0, 'warm_start': False}
+
+Melhor threshold: 0.5
+Melhor threshold TPR: 0.5
+
+AUC: 0.5463
+F1: 0.2757
+Recall: 0.1735
+Precision: 0.6711
+Accuracy: 0.5556
